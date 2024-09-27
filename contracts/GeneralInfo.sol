@@ -6,7 +6,7 @@ import "@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol";
 import "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol";
 
 
-contract generalInfo is OwnableUpgradeable {
+contract GeneralInfo is OwnableUpgradeable {
     string public constant version = "1.0.0";
 
     enum TokenType {
@@ -27,9 +27,9 @@ contract generalInfo is OwnableUpgradeable {
         _;
     }
 
-    // constructor() {
-    //     _disableInitializers();
-    // }
+     constructor() {
+         _disableInitializers();
+     }
 
     /*
     * Initialization function
